@@ -1,0 +1,12 @@
+-var imggroups = ['Education','Refugees','Africa','Blood Donation']
+-if(!gallerybg) gallerybg=""
+section.section.our-gallery.nopadding-bottom(class="#{gallerybg}")
+  -var sectiontitle = 'Our gallery'
+  include ../globals/_section-title.jade
+  .images-container
+    -for (x=1;x<11;x++)
+      .img
+        img(src="http://placehold.it/768x654", alt="")
+        .overlay
+          .icon
+           a(href="http://placehold.it/768x654" class="image-link"):  i.fa.fa-plus

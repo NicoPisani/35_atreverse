@@ -1,0 +1,28 @@
+extends layout/layout.jade
+block pagecontent
+ 
+  include _topbar.jade
+  include _navbar.jade
+  -var headerversion = 2
+  include components/_header.jade
+  include components/_about-us.jade
+  -var causesversion = "one"
+  include components/_causes.jade
+  include components/_our-team.jade
+  include components/_blog.jade
+  include components/_become.jade
+  include components/_our-gallery.jade
+  include components/_our-numbers.jade
+  //-var darksectionversion ="adopt"
+  include components/_dark-section.jade
+  include components/_testmonials.jade
+  include components/_partners.jade
+  -var eventversion ="horizontal"
+  include components/_upcoming-events.jade
+  //-var footerversion ="whitecenter"
+  include components/_contact-us.jade
+  include components/_footer.jade
+  //-var redsectionversion = "subsribe"
+  include components/_red-section.jade
+  include components/_fund-tabs.jade
+  include components/_copy-rights.jade

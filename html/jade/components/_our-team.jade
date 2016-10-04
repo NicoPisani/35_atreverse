@@ -1,0 +1,50 @@
+-var teamnames = ['Larry Dimmick','Freddy Newandyke','Vic Vega','Eddie Cabot','Larry Dimmick','Freddy Newandyke','Vic Vega','Eddie Cabot','vic vega']
+-if(!teambg) teambg=""
+section.section.our-team#team(class="#{teambg}")
+  -var sectiontitle = 'Our Team'
+  include ../globals/_section-title.jade
+  .container
+    .row
+      case teamnumber
+        when "teampage"
+          -for(x=1;x<9;x++)
+            .col-md-6.team-member-wrap(class="wow fadeInUp" data-wow-delay="0.{x}s")
+              .team-member
+                  .col-md-6.col-sm-5.col-xs-12.nopadding-left
+                      .img
+
+
+                        img(src="http://placehold.it/270x175", alt="")
+                  .col-md-6.col-sm-7.col-xs-12.nopadding-right.nopadding-left
+
+
+                    h4 #{teamnames[x]}
+                    span.title CEO / Founder
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .
+                    ul.social
+                      li: a(href="#"): i.fa.fa-facebook
+                      li: a(href="#"): i.fa.fa-twitter
+                      li: a(href="#"): i.fa.fa-linkedin
+                      li: a(href="#"): i.fa.fa-envelope-o
+        default
+          -for(x=1;x<5;x++)
+            .col-md-6.team-member-wrap(class="wow fadeInUp" data-wow-delay="0.#{x}s")
+              .team-member
+                  .col-md-6.col-sm-5.col-xs-12.nopadding-left
+                      .img
+
+
+                        img(src="http://placehold.it/270x175", alt="")
+                  .col-md-6.col-sm-7.col-xs-12.nopadding-right.nopadding-left
+
+                       
+
+
+                    h4 #{teamnames[x]}
+                    span.title CEO / Founder
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .
+                    ul.social
+                      li: a(href="#"): i.fa.fa-facebook
+                      li: a(href="#"): i.fa.fa-twitter
+                      li: a(href="#"): i.fa.fa-linkedin
+                      li: a(href="#"): i.fa.fa-envelope-o

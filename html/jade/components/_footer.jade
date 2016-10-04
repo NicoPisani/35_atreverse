@@ -1,0 +1,72 @@
+-var links = ['Our Causes','Services','FAQ','Upcoming Events','Terms of Use']
+-var social = ['facebook','twitter','google-plus','tumblr','linkedin']
+case footerversion
+  when "darkcenter"
+       footer.text-center.dark-bg.centerd
+         .container
+           img(src="img/logo.png", alt="" class="logo") 
+           p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco magna aliqua laboris nisi ut aliquip co 
+          ul.social
+            -for(x=0;x<5;x++)
+              li: a(href="#") 
+                i(class="fa fa-#{social[x]}")
+                  
+                  
+  when "whitecenter"
+     footer.text-center.white-version.centerd
+       .container
+         img(src="img/logo.png", alt="" class="logo") 
+         p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco magna aliqua laboris nisi ut aliquip ex ea co
+        ul.social
+          -for(x=0;x<5;x++)
+            li: a(href="#")
+              i(class="fa fa-#{social[x]}")
+              
+              
+  default
+    footer.dark
+      .container
+        .row
+          .col-md-3.col-sm-4.col-xs-12.footer-col
+             -var subsectiontitle = 'About us'
+             include ../globals/_sub-section-title.jade
+             p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+             ul.social
+                -for(x=0;x<5;x++)
+                  li: a(href="#"): i(class="fa fa-#{social[x]}")
+
+          .col-md-3.col-sm-4.col-xs-12.footer-col
+             -var subsectiontitle = 'Our Services'
+             include ../globals/_sub-section-title.jade
+             ul.links
+              -for (x=0;x<4;x++)
+                li
+                  a(href="#")
+                    i.fa.fa-angle-right
+                    | #{links[x]}
+          .col-md-3.col-sm-4.col-xs-12.footer-col
+             -var subsectiontitle = 'Latest Posts'
+             include ../globals/_sub-section-title.jade
+             ul.posts
+                  li
+                    .img
+                      img(src="http://placehold.it/80x80", alt="")
+                    .content
+                      h6.post-title: a(href="#") There are many variations of passages of Lorem Ipsum available
+                      span.date 5 December 2015 By Admin
+                   li
+                    .img
+                      img(src="http://placehold.it/80x80", alt="")
+                    .content
+                      h6.post-title: a(href="#") There are many variations of passages of Lorem Ipsum available
+                      span.date 5 December 2015 By Admin
+          .col-md-3.hidden-sm.hidden-xs.footer-col
+            -var subsectiontitle = 'Flicker Feed'
+            include ../globals/_sub-section-title.jade
+            ul.flicker-feed
+             -for(x=0;x<6;x++)
+                li
+
+                     img(src="http://placehold.it/80x80", alt="")

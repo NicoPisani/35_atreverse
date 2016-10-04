@@ -1,0 +1,55 @@
+/*--------------------------------------------------
+
+- [12] -  Testmonials
+
+---------------------------------------------------*/
+.testmonials {
+  
+  text-align: center;
+  .single-testmonial {height: auto;}
+  img {
+    width: 77px;
+    height: 77px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .person-name {
+    color: $primary-text;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .title {
+    color: $meta-text;
+    font-style: italic;
+    margin-top: 30px;
+  }
+  p {
+    max-width: 580px;
+    margin: auto;
+    color: $primary-text;
+    margin-top: 5px;
+  }
+}
+
+.slick-dots {
+  li {
+    margin: 0 2px;
+  }
+  li button {
+    padding: 0;
+    width: 10px;
+    height: 10px;
+  }
+  li button:before {
+    height: 10px;
+    width: 10px;
+    content: '';
+    opacity: 1;
+    background: #cecece;
+    border-radius: 0;
+  }
+  li.slick-active button:before {
+    background: $primary-color;
+  }
+}

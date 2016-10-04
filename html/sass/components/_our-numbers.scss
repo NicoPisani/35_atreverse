@@ -1,0 +1,48 @@
+/*--------------------------------------------------
+
+- [10] -  Our Numbers
+
+---------------------------------------------------*/
+.our-numbers {
+  background: url(http://placehold.it/1920x800) top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .single-number {
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    .icon,.content {display: inline-block;}
+    .icon {
+      margin-right: 20px;
+      i {
+        font-size: 55px;
+      }
+    }
+    .content {
+      text-align: left;
+      .title {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 14px;
+        text-transform: uppercase;
+        max-width: 120px
+      }
+      .number {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+    &.yellow {color: $yellow;}
+    &.red {color: $red;}
+    &.violet {color: $violet;}
+    &.teal {color: $primary-color;}
+  }
+}
+
+/// responsive 
+@media screen and (max-width:992px) {
+  .our-numbers .single-number {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}

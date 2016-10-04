@@ -1,0 +1,22 @@
+extends layout/layout.jade
+block pagecontent
+  -var TopBarVersion ="login"
+  include _topbar.jade
+  include _navbar.jade
+  -var headerversion = 2
+  include components/_header.jade
+  include components/_about-us.jade
+  include components/_red-section.jade
+  -var causesversion = "vertical"
+  include components/_causes.jade
+  -var darksectionversion ="adopt"
+  include components/_dark-section.jade
+  include components/_upcoming-events.jade
+  include components/_our-numbers.jade
+  include components/_our-team.jade
+  include components/_testmonials.jade
+  -var redsectionversion = "subsribe"
+  include components/_red-section.jade
+  include components/_contact-us.jade
+  include components/_footer.jade
+  include components/_copy-rights.jade

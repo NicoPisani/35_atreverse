@@ -1,0 +1,30 @@
+-var tabs = ['who','mission','vision','message']
+section.section.fund-tabs
+  .custom-tabs
+    .container
+      ul(role="tablist")
+          li.active(role="presentation")
+            a(href="#who" role="tab" data-toggle="tab")
+              .icon: i.icon-people
+              h3.title Who Are We
+          li(role="presentation")
+            a(href="#mission" role="tab" data-toggle="tab")
+              .icon: i.icon-trophy
+              h3.title Our Mission
+          li(role="presentation")
+            a(href="#vision" role="tab" data-toggle="tab")
+              .icon: i.icon-eyeglass
+              h3.title Our Vision
+          li(role="presentation")
+            a(href="#message" role="tab" data-toggle="tab")
+              .icon: i.icon-envelope-open
+              h3.title Our Message
+  .tab-content
+      .content(role="tabpanel" class="tab-pane fade in active" id="who")
+          -var x =0;
+           -aboutusversion ="tabs-version"
+           include _about-us.jade
+      -for(x=1;x<=3;x++)
+        .content(role="tabpanel" class="tab-pane fade" id="#{tabs[x]}")
+          -aboutusversion ="tabs-version"
+           include _about-us.jade

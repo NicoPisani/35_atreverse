@@ -1,0 +1,24 @@
+extends layout/layout.jade
+block pagecontent
+  include _topbar.jade
+  -var NavbarVersion ="onepage"
+  include _navbar.jade
+  include components/_header.jade
+  include components/_about-us.jade
+  -var causesversion = "verticalslick"
+  include components/_causes.jade
+  include components/_become.jade
+  -var eventversion ="vertical"
+  include components/_upcoming-events.jade
+  -var gallerybg ="grey-bg"
+  include components/_our-gallery.jade
+  include components/_blog.jade
+  include components/_our-numbers.jade
+  include components/_our-team.jade
+  include components/_testmonials.jade
+  -var redsectionversion = "subsribe"
+  include components/_red-section.jade
+  include components/_partners.jade
+  include components/_contact-us.jade
+  include components/_footer.jade
+  include components/_copy-rights.jade

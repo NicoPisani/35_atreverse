@@ -1,0 +1,55 @@
+// colors 
+$primary-color: #4ecdc4;
+$red: #ff6b6b;
+$yellow: #fdd93a;
+$violet: #c768ff;
+$border-color: #ebebeb;
+$grey-bg: #f9fafc;
+$dark-bg: #18171a;
+$footer-dark-bg: #0c1c21;
+$copy-rights-bg: #050f12;
+$primary-text: #494949;   //494949
+$secondary-text: #818181; 
+$meta-text: lighten(#999d9e,15%);     // a9a8a7
+
+// typography
+$primary-font-size: 13px;
+$baseline: 1.5;
+$h1-font-size: 65px;
+$h2-font-size: 25px;
+$h3-font-size: 15px;
+$h4-font-size: 14px;
+$h5-font-size: 12px;
+$h6-font-size: 10px;
+$meta-font-size: 12px;
+$section-padding: 100px;
+$header-margin: 60px;
+$fa: 'FontAwesome';
+
+// Height
+$navbar-height : 120px;
+$navbar-height-fixed : 80px;
+$topbar-height : 50px;
+$navbar-height-sm : 80px;
+
+// z-index
+$menu-z-index: 9;
+$dropdown-z-index: 9;
+$search-z-index:8;
+
+@mixin transition($ts...) {
+  -webkit-transition: $ts;
+  -moz-transition: $ts;
+  -ms-transition: $ts;
+  -o-transition: $ts;
+  transition: $ts;
+}
+
+@mixin circle($w) {
+  width: $w;
+  height: $w;
+  line-height: $w;
+  text-align: center;
+  border-radius: 50%;
+  
+}

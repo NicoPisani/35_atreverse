@@ -1,0 +1,89 @@
+/*--------------------------------------------------
+
+- [4] - Top bar
+
+---------------------------------------------------*/
+.top-bar{
+  height: $topbar-height;
+  line-height: $topbar-height;
+  background: $grey-bg;
+  border-bottom: 1px solid $border-color;
+  color: $meta-text;
+  font-size: 12px;
+  overflow: hidden;
+  
+  .left-content {
+    float: left;
+    li {
+      float: left;
+      padding-left: 45px;
+      padding-right: 15px;
+      border-right: 1px solid $border-color;
+      position: relative;
+      a {
+        color: #fff;
+      }
+      .icon {
+        position: absolute;
+        left:15px;
+        top:50%;
+        margin-top: -23px;
+        margin-right: 10px;
+        font-size: 20px;
+        display: inline-block;
+      }
+    }
+    li.login a{color: $meta-text;}
+  }
+  .right-content {
+    float: right;
+    overflow: hidden;
+    .social {
+      line-height: $topbar-height;
+      display: inline-block;
+      li {
+        display: inline-block;
+        margin-right: 15px;
+        a {
+          color: $meta-text;
+          font-size: 14px;
+          position: relative;
+          transition: all 0.3s;
+        }
+        &:hover {
+          a {
+            color: darken($meta-text,10%);
+            top: 1px;
+          }
+        }
+      }
+    }
+    button {
+      float: right;
+      margin-top: 11px;
+      line-height: 27px;
+    }
+  }
+  &.green {
+    background: $primary-color;
+    color: #fff;
+    .right-content .social li a {color: #fff;}
+    .left-content {
+      li {
+        border-right: 1px solid  darken($primary-color,7.5%);
+      }
+    }
+  }
+}
+
+/* responsive */
+@media screen and (max-width:992px) {
+  .right-content {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  .left-content {
+    display: none;
+  }
+}

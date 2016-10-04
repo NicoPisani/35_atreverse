@@ -1,0 +1,160 @@
+/*--------------------------------------------------
+
+- [7] -  Causes
+
+---------------------------------------------------*/
+.single-cause {
+  background: #fff;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid $border-color;
+  margin-bottom: 30px;
+    h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      a {
+        color: inherit;
+        transition: all 0.3s;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+   ul {
+      margin-bottom: 15px;
+      overflow: hidden;
+      li {
+        display: inline-block;
+        margin-right: 5px;
+        .title {
+          color: $secondary-text;
+          font-weight: 700;
+        }
+        .number {
+          color: $primary-color;
+        }
+        &:last-child {
+          float: right;
+        }
+      }
+    }
+}
+.single-cause.horizontal {
+  padding: 30px 20px 30px 280px;
+  .img {
+    width: 260px;
+    position: absolute;
+    left:0;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    img {
+      height: 230px;
+    }
+  }
+  .content {
+    position: relative;
+    overflow: hidden;
+   
+    p {
+      color: $secondary-text;
+      margin-top: 20px;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+}
+.single-cause.vertical {
+  text-align: center;
+  
+  .img {
+    width: 100%;
+    height: 183px;
+    overflow: hidden;
+  }
+  .content {
+    padding: 20px;
+    ul {
+      text-align: left;
+    }
+    h3 {
+      height: 36px;
+      overflow: hidden;
+    }
+  }
+}
+.single-cause.one {
+  .content {
+    padding: 30px 15px;
+  }
+  .img {
+    max-height: 380px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
+.causes .slick-slide {
+  height: auto;
+}
+.cause-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .cause-img {
+    margin-bottom: 30px;
+    position: relative;
+    button {
+      position: absolute;
+      z-index: 3;
+      left: 15px;
+      bottom: 15px;
+    }
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+  .single-cause.horizontal .content ul li {
+    &:last-child {
+      float: left;
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+  .single-cause.vertical .content ul li {
+    &:last-child {
+      float: right;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .single-cause.horizontal {
+    padding: 0 0 20px 0;
+    .img {
+      width: 100%;
+      height: auto;
+      position: static;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .content {
+      margin-top: 30px;
+      padding: 0 20px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width:360px) {
+   .single-cause.vertical .content ul li {
+    &:last-child {
+      float: left;
+    }
+  }
+}

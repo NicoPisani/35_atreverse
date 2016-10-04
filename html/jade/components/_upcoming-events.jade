@@ -1,0 +1,104 @@
+-var titles = ['BLOOD DONATION EVENT FOR SYRIAN WOUNDED KIDS','Players to double charity donations in 16','Asda removes food bank donation points from UK stores']
+case eventversion
+  when "horizontal"
+     section.section.events.grey-bg#events
+      .container
+        -var sectiontitle = 'UPCOMING EVENTS'
+        include ../globals/_section-title.jade
+        .row
+          -for(x=0;x<3;x++)
+             .col-md-12.col-sm-12.col-xs-12(class="wow fadeInUp" data-wow-delay="0.#{x}s")
+              .single-event.horizontal
+                .col-md-5.nopadding
+                  .img
+                    img(src="http://placehold.it/360x196", alt="")
+                .col-md-7.nopadding
+                  .content
+                    h4.event-title: a(href="single-cause.html") #{titles[x]}
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                    .information
+                      ul.meta-list
+                        li
+                          i.icon-calendar
+                          | May 11th , 2015 to June 3rd 2015 from 3:00 PM to 12:00 PM
+                        li
+                          i.icon-map
+                          | 9st , Maadi , Giza , Egypt
+                      .count-down
+                        ul 
+                          li
+                            h5 25 <br />
+                             |DAYS
+                          li
+                            h5 19 <br />
+                             |HOURS
+                          li
+                            h5 30 <br />
+                             |MINUTES
+                          li
+                            h5 15 <br />
+                             |SECONDS
+                             
+  when "one"
+     section.section.events.grey-bg#events
+      .container
+        -var sectiontitle = 'UPCOMING EVENTS'
+        include ../globals/_section-title.jade
+        .row
+             .col-md-12.col-sm-12.col-xs-12(class="wow fadeInUp" data-wow-delay="0.#{x}s")
+              .single-event.horizontal
+                .col-md-5.nopadding
+                  .img
+                    img(src="http://placehold.it/360x196", alt="")
+                .col-md-7.nopadding
+                  .content
+                    h4.event-title: a(href="single-cause.html") #{titles[x]}
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                    .information
+                      ul.meta-list
+                        li
+                          i.icon-calendar
+                          | May 11th , 2015 to June 3rd 2015 from 3:00 PM to 12:00 PM
+                        li
+                          i.icon-map
+                          | 9st , Maadi , Giza , Egypt
+                      .count-down
+                        ul 
+                          li
+                            h5 25 <br />
+                             |DAYS
+                          li
+                            h5 19 <br />
+                             |HOURS
+                          li
+                            h5 30 <br />
+                             |MINUTES
+                          li
+                            h5 15 <br />
+                             |SECONDS
+
+
+
+  default
+    
+    section.section.events#events
+      .container
+        -var sectiontitle = 'UPCOMING EVENTS'
+        include ../globals/_section-title.jade
+        .row
+         -for(x=0;x<3;x++)
+           .col-md-4.col-sm-6.col-xs-12(class="wow fadeInUp" data-wow-delay="0.#{x}s")
+            .single-event.vertical
+
+                .img.overlay-dark2
+
+                .content
+                  h4.event-title: a(href="single-cause.html") #{titles[x]}
+                  ul
+                    li
+                      i.icon-calendar
+                      | 15/2/1992
+                    li
+                      i.icon-calendar
+                      | Cairo,Egypt
+                  p Lorem ipsum dolor sit amet, conse ctetur elit, sed do eiusmod tempor incididunt ut labor isicing  et dolore  quis nostrud ullamco... 

@@ -1,0 +1,24 @@
+{
+  "name": "resala",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Mohamed Sobhy <mohamedsobhy292@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "~1.5.9"
+  }
+}

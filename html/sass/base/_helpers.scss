@@ -1,0 +1,287 @@
+/*--------------------------------------------------
+
+- [6] -  Helper classes
+
+---------------------------------------------------*/
+
+// backgrounds
+.grey-bg {
+  background: $grey-bg;
+}
+.wh-bg {
+  background: #fff;
+}
+.dark-bg {
+  background: $dark-bg;
+}
+.violet-bg {
+  background: $violet;
+}
+.red-bg {
+  background: $red;
+}
+.teal-bg {
+  background: $primary-color;
+}
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.overlay-dark {
+  position: relative;
+  z-index: 4;
+  .container {
+    position: relative;
+    z-index: 4;
+  }
+  &:after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+  }
+}
+.overlay-dark2 {
+  position: relative;
+  z-index: 2;
+  &:after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+  }
+}
+.overlay-dark3 {
+  position: relative;
+  z-index: 2;
+  .container {
+    position: relative;
+    z-index: 4;
+  }
+  &:after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+  }
+}
+
+.nopadding {
+ padding-left: 0 !important;
+ padding-right: 0 !important;
+}
+.nopadding-bottom {
+  padding-bottom: 0 !important;
+}
+.nopadding-left {
+  padding-left: 0 !important;
+}
+.nopadding-right {
+   padding-right: 0 !important;
+}
+.section { 
+  padding-top: 100px;
+  padding-bottom: 100px;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width:768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+
+// titles
+
+.section-title {
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 3;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .description-text {
+      margin-top: 35px;
+      margin-bottom: 0;
+      max-width: 530px;
+      margin-left: auto;
+      line-height: 1.5;
+      margin-right: auto;
+      color: darken($meta-text,10%);
+    }
+  .underlines {
+    color: $secondary-text;
+    width: 212px;
+    margin: auto;
+    font-size: 14px;
+    position: relative;
+    .icon {
+      position: absolute;
+      left: 50%;
+      top: -5px;
+      margin-left: -7px;
+    }
+    .right {
+      width: 50%;
+      float: right;
+      display: block;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        top: 4px;
+        height: 1px;
+        width: 90px;
+        background: $secondary-text;
+      }
+        &:after {
+        content: '';
+        position: absolute;
+        left: 15px;
+        top: 8px;
+        height: 1px;
+        width: 57px;
+        background: $secondary-text;
+      }
+    }
+    .left {
+      width: 50%;
+      float: left;
+      display: block;
+      position: relative;
+        &:before {
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 4px;
+        height: 1px;
+        width: 90px;
+        background: $secondary-text;
+      }
+        &:after {
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        height: 1px;
+        width: 57px;
+        background: $secondary-text;
+      }
+      
+    }
+    
+  }
+}
+.sub-section-title {
+  margin-bottom: 25px;
+  h3 {
+    margin-top: 0;
+  }
+  .underlines {
+    width: 90px;
+    position: relative;
+      .left {
+      float: left;
+      display: block;
+      position: relative;
+        &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0px;
+        height: 1px;
+        width: 90px;
+        background: $secondary-text;
+      }
+        &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 4px;
+        height: 1px;
+        width: 57px;
+        background: $secondary-text;
+      }
+      
+    }
+  }
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+.progressbar {
+  background: #e6e6e6;
+  position:relative;
+  display:block;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: none;
+ 
+  position: relative;
+  height: 6px;
+  border-radius: 3px;
+  text-align: left;
+  .progress-nm {
+    height: 6px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    border-radius: 3px;
+    background: $primary-color;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  }
+.tag {
+  background: #c6c6c6;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+.meta {
+  color: $meta-text;
+}
+.nomargin {
+  margin: 0 !important;
+}
+.mt5{
+  margin-top: 5px;
+}
+.form-group {
+    position: relative;
+    input {
+      width: 100%;
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      margin-top: -7px;
+      color: #a9a8a7;
+      right: 15px;
+      
+    }
+  }

@@ -1,0 +1,94 @@
+case NavbarVersion
+  when 'fundraising'
+     nav.primary-navbar.ts
+      .container
+        .menu-toggle
+          i.icon-menu
+        #logo
+          a(href="index-1.html")
+            img(src="img/logo.png", alt="")
+        
+        .data
+          button.button.btn-x-small.primary.cta.hidden-xs SUPPORT US
+        ul.navbar-content
+          li.active: a.smooth(href="#header") Home
+          li: a.smooth(href="#about-us") About
+          li: a.smooth(href="#causes") Causes
+          li: a.smooth(href="#events") Events
+          li: a.smooth(href="#team") Team
+          li: a.smooth(href="#contact") Contact us
+        
+  when 'onepage'
+    nav.primary-navbar
+        .container
+          .menu-toggle
+            i.icon-menu
+          #logo
+            a(href="index-1.html")
+              img(src="img/logo.png", alt="")
+          ul.search
+            li.search-toggler
+              i.icon-magnifier
+
+          ul.navbar-content
+            li.active: a.smooth(href="#header") Home
+            li: a.smooth(href="#about-us") About
+            li: a.smooth(href="#causes") Causes
+            li: a.smooth(href="#events") Events
+            li: a.smooth(href="#blog") Blog
+            li: a.smooth(href="#team") Team
+            li: a.smooth(href="#contact") Contact us
+        .search-bar
+          input(type="search" placeholder="Enter your Search Here")
+        
+  default
+    nav.primary-navbar
+      .container
+        .menu-toggle
+          i.icon-menu
+        #logo
+          a(href="index-1.html")
+            img(src="img/logo.png", alt="")
+        ul.search
+          li.search-toggler
+            i.icon-magnifier
+
+        ul.navbar-content
+          li.drop-down.active 
+            a(href="#") Home
+            ul
+              li: a(href="index-1.html") Home 1
+              li: a(href="index-2.html") Home 2
+              li: a(href="index-3.html") Home 3
+              li: a(href="index-4.html") Home 4
+              li: a(href="index-5.html") Home 5
+              li: a(href="index-6.html") Home 6
+          li: a(href="about-us.html") About
+          li.drop-down
+            a(href="#") Causes
+            ul
+              li: a(href="causes-list.html") Causes list style
+              li: a(href="causes-grid.html") Causes Grid style
+              li: a(href="single-cause.html") Single Cause
+          li.drop-down
+            a(href="#") Pages
+            ul
+              li: a(href="404.html") 404 Page
+              li: a(href="coomin-soon.html") Cooming soon page
+              li: a(href="gallery.html")  Gallery
+              li: a(href="team.html")  Team
+          li.drop-down 
+            a(href="#") Events
+            ul
+              li: a(href="events-list.html") events-list
+              li: a(href="events-grid.html") events-grid
+          li.drop-down 
+            a(href="#") Blog
+            ul
+              li: a(href="blog.html") Blog page
+              li: a(href="blog-post.html") Blog post
+          li: a(href="contact-us.html") Contact us
+      .search-bar
+        input(type="search" placeholder="Enter your Search Here")
+          
+

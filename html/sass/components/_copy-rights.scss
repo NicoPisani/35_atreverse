@@ -1,0 +1,36 @@
+.copy-rights {
+  overflow: hidden;
+  clear: both;
+  color: #fff;
+  background: $copy-rights-bg;
+  line-height: 80px;
+  ul {
+    float: right;
+    margin-left: 30px;
+    li {
+      display: inline-block;
+      margin-left: 15px;
+      a {
+        color: inherit;
+      }
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  p {
+    float: left;
+    margin: 0;
+    color: #fff;
+    line-height: 80px;
+  }
+}
+/// responsive
+@media screen and (max-width:768px) {
+  .copy-rights {
+    line-height: normal;
+    padding: 15px 0;
+    text-align: center;
+    p,ul {float: none; line-height: normal; margin: 10px 0;}
+  }
+}

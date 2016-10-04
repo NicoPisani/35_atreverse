@@ -1,0 +1,12 @@
+-var testmonials = {names:['Walter White','Jesse Pinkman','Saul Goodman'],titles:['UI Designer','CEO','Front end Developer'],imgs:['img/testmonial-01.jpg','img/testmonial-02.jpg','img/testmonial-03.jpg']}
+section.testmonials.section.grey-bg
+  -var sectiontitle = 'What our donors says'
+  //include ../globals/_section-title.jade
+  .container
+    .testmonials-container.slick-carousl
+      -for(x=0;x<3;x++)
+        .single-testmonial
+          img(src="#{testmonials.imgs[x]}", alt="")
+          h4.person-name #{testmonials.names[x]}
+          span.title #{testmonials.titles[x]}
+          p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 

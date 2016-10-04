@@ -1,0 +1,124 @@
+case TopBarVersion
+ when "green"
+    .top-bar.green
+      .container
+        .left-content
+          ul
+             li
+               span.icon: i.icon-envelope
+               | support@resalatheme.com
+             li
+               span.icon: i.icon-earphones-alt
+               | +201234567891
+         .right-content
+           ul.social
+             li: a(href="#"): i.fa.fa-facebook
+             li: a(href="#"): i.fa.fa-twitter
+             li: a(href="#"): i.fa.fa-youtube
+             li: a(href="#"): i.fa.fa-google-plus
+             li: a(href="#"): i.fa.fa-tumblr
+             li: a(href="#"): i.fa.fa-linkedin
+            button.button.btn-border-light.btn-x-small.hidden-xs VOLUNTEER NOW
+            
+   when "login"
+    .top-bar
+      .container
+        .left-content.hidden-xs
+          ul
+             li
+               span.icon: i.icon-envelope
+               | support@resalatheme.com
+             li
+               span.icon: i.icon-earphones-alt
+               | +201234567891
+              li.login
+               span.icon: i.icon-user
+               a(href="#") Login / Register
+         .right-content
+           ul.social
+             li: a(href="#"): i.fa.fa-facebook
+             li: a(href="#"): i.fa.fa-twitter
+             li: a(href="#"): i.fa.fa-youtube
+             li: a(href="#"): i.fa.fa-google-plus
+             li: a(href="#"): i.fa.fa-tumblr
+             li: a(href="#"): i.fa.fa-linkedin
+            button.button.btn-border-primary.btn-x-small VOLUNTEER NOW
+            
+  default        
+    .top-bar
+      .container
+        .left-content.hidden-xs
+          ul
+             li
+               span.icon: i.icon-envelope
+               | support@resalatheme.com
+             li
+               span.icon: i.icon-earphones-alt
+               | +201234567891
+         .right-content
+           ul.social
+             li: a(href="#"): i.fa.fa-facebook
+             li: a(href="#"): i.fa.fa-twitter
+             li: a(href="#"): i.fa.fa-youtube
+             li: a(href="#"): i.fa.fa-google-plus
+             li: a(href="#"): i.fa.fa-tumblr
+             li: a(href="#"): i.fa.fa-linkedin
+            button.button.btn-primary.btn-x-small(data-toggle="modal", data-target="#volunteermodal") VOLUNTEER NOW
+    #volunteermodal.modal.fade.custommodal(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+            h3#myModalLabel.modal-title BECOME A VOLUNTEER
+          .modal-body.clearfix
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="Name")
+                span.icon: i.icon-user
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="Project")
+                span.icon: i.icon-pencil
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="Phone Number")
+                span.icon: i.icon-earphones
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="E-mail")
+                span.icon: i.icon-envelope
+            .col-md-12
+              .form-group
+                textarea(placeholder="aditional information")
+          .modal-footer
+            button.submit.button.primary(type='button') BECOME A VOLUNTEER
+    #donatemodal.modal.fade.custommodal(tabindex='-1', role='dialog', aria-labelledby='myModalLabel2')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span.close-icon(aria-hidden='true'): i.icon-close
+            h3#myModalLabel2.modal-title BECOME A DONATER
+          .modal-body.clearfix
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="Enter Donation Amount")
+                span.icon: i.icon-info
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="Name")
+                span.icon: i.icon-user
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="Phone Number")
+                span.icon: i.icon-earphones
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="E-mail")
+                span.icon: i.icon-envelope
+            .col-md-12
+              .form-group
+                textarea(placeholder="aditional information")
+          .modal-footer
+            button.submit.button.primary(type='button') DONATE

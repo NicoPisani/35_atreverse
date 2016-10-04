@@ -1,0 +1,16 @@
+extends layout/layout.jade
+block pagecontent
+  include _topbar.jade
+  include _navbar.jade
+  -var headerversion = 5
+  include components/_header.jade
+  include components/_become.jade
+  -var causesversion = "verticalslick"
+  include components/_causes.jade
+  //include components/_our-gallery.jade
+  -var eventversion ="vertical"
+  include components/_upcoming-events.jade
+  -var blogbg ="grey-bg"
+  include components/_blog.jade
+  -var footerversion = "darkcenter"
+  include components/_footer.jade

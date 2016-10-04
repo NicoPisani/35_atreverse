@@ -1,0 +1,45 @@
+/*--------------------------------------------------
+
+- [16] - Partners
+
+---------------------------------------------------*/
+.partners {
+  .single-partner {
+    text-align: center;
+    line-height: 165px;
+    display: table;
+    border: 1px solid $border-color;
+    height: 120px;
+    width: 165px;
+    .img {
+      vertical-align: middle;
+      display: table-cell;
+    }
+    img {
+      
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
+/// responsive
+@media screen and (max-width:992px) {
+  .single-partner {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .partners .single-partner {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .partouter {
+    width: 100%;
+    .single-partner {
+      width: 100%;
+    }
+  }
+}

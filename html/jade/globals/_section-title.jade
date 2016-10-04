@@ -1,0 +1,19 @@
+case descriptiontext
+  when 'no'
+    .section-title
+            h2 #{sectiontitle}
+            .underlines
+              span.right
+              .icon: i.fa.fa-star
+              span.left
+  default
+    .section-title
+            h2 #{sectiontitle}
+            .underlines
+              span.right
+              .icon: i.fa.fa-star
+              span.left
+            p.description-text.hidden-xs Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        
+-var sectiontitle= ''
+-var descriptiontext=""

@@ -1,0 +1,14 @@
+extends layout/layout.jade
+block pagecontent
+  -var NavbarVersion = "fundraising"
+  include _navbar.jade
+  -var headerversion = 4
+  include components/_header.jade
+  include components/_fund-tabs.jade
+  -var causesversion = "one"
+  include components/_causes.jade
+  include components/_fund-rewards.jade
+  include components/_testmonials.jade
+  include components/_our-team.jade
+  include components/_contact-us.jade
+  include components/_footer.jade

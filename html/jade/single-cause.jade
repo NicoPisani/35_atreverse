@@ -1,0 +1,32 @@
+extends layout/layout.jade
+block pagecontent
+  -var pagetitle="Single Caus"
+  include _topbar.jade
+  include _navbar.jade
+  include components/_breadcrumbs.jade
+  .cause-page
+    .post-container
+      .cause-img
+        img(src="img/pexels-photo.jpg", alt="")
+        button.button.primary(data-toggle="modal", data-target="#donatemodal") DONATE NOW
+        
+      span.date DECEMBER,12TH 2015
+      h3.post-title How to make your charity donations count this Christmas
+      p
+        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+      h3 How to make your charity donations count this
+      p
+       | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      .col-md-3.nopadding
+       img(src="img/gallery-3.jpg", alt="")
+      .col-md-9
+        p
+          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+          
+      h3 How to make your charity donations count this
+      p
+        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      button.button.primary.btn-xlg DONATE NOW
+      
+  include components/_footer.jade
+  include components/_copy-rights.jade

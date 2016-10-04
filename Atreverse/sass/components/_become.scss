@@ -1,0 +1,33 @@
+/*--------------------------------------------------
+
+- [9] -  Become section
+
+---------------------------------------------------*/
+.become-section {
+  .become-a-thing {
+    padding: 40px 40px;
+   
+    overflow: hidden;
+    .title {
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #fff;
+      margin-bottom: 25px;
+     
+      overflow: hidden;
+    }
+  }
+}
+/// responsive
+@media screen and (max-width:992px) {
+  .become-section .become-a-thing {
+    height: auto;
+    p {
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+/*--------------------------------------------------
+
+- [19] - Fund Raising Rewards
+
+---------------------------------------------------*/
+.rewards {
+  background: url(http://placehold.it/1920x800) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #c8c8c8;
+  ul {
+    position: relative;
+    z-index: 3;
+    .single-reward {
+      padding: 15px 0;
+      overflow: hidden;
+      border-bottom: 1px solid #494949;
+      .reward {
+        margin: 0;
+        margin-top: 10px;
+        color: #fff;
+      }
+      .pledge {
+        margin: 0;
+        margin-top: 10px;
+        color: #fff;
+        .num {
+          color: $primary-color;
+        }
+      }
+      p {
+        line-height: 1.4;
+        color: #e6e6e6;
+        margin-top: 10px;
+      }
+      button {
+        height: 40px;
+        line-height: 1;
+        position: absolute;
+        right: 0;
+        border-radius: 2px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/// responsive
+@media screen and (max-width:768px) {
+  .rewards {
+    ul {
+      .single-reward {
+        text-align: center;
+        padding: 30px 0;
+        button {
+          margin-top: 25px;
+          position: static;
+        }
+      }
+    }
+  }
+ 
+}

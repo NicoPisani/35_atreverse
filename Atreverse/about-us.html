@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fundación Atreverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Modernizer-->
+    <script src="js/modernizr.js"></script>
+    <!-- Botstrap styling-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- simple line icons-->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <!-- magnific popup-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- slick styles-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!--animate css-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- primary style-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="load-wrapp">
+      <div class="load-1">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="top-bar">
+      <div class="container">
+        <div class="left-content hidden-xs">
+          <ul>
+            <li><span class="icon"><i class="icon-envelope"></i></span>atreverseinstitucional@gmail.com</li>
+            <li><span class="icon"><i class="icon-earphones-alt"></i></span>(011)  4791 9264</li>
+          </ul>
+        </div>
+        <div class="right-content">
+          <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+          <button data-toggle="modal" data-target="#volunteermodal" class="button btn-primary btn-x-small">TRABAJA CON NOSOTROS</button>
+        </div>
+      </div>
+    </div>
+    <div id="volunteermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade custommodal">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h3 id="myModalLabel" class="modal-title">BECOME A VOLUNTEER</h3>
+          </div>
+          <div class="modal-body clearfix">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Name"><span class="icon"><i class="icon-user"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Project"><span class="icon"><i class="icon-pencil"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Phone Number"><span class="icon"><i class="icon-earphones"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="E-mail"><span class="icon"><i class="icon-envelope"></i></span>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea placeholder="aditional information"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="submit button primary">BECOME A VOLUNTEER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="donatemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" class="modal fade custommodal">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true" class="close-icon"><i class="icon-close"></i></span></button>
+            <h3 id="myModalLabel2" class="modal-title">BECOME A DONATER</h3>
+          </div>
+          <div class="modal-body clearfix">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Enter Donation Amount"><span class="icon"><i class="icon-info"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Name"><span class="icon"><i class="icon-user"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Phone Number"><span class="icon"><i class="icon-earphones"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="E-mail"><span class="icon"><i class="icon-envelope"></i></span>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea placeholder="aditional information"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="submit button primary">DONATE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="primary-navbar">
+      <div class="container">
+        <div class="menu-toggle"></div>
+        <div id="logo"><a href="index-1.html"><img src="img/logo.jpg" alt=""></a></div>
+        <ul class="search">
+          <li class="search-toggler"><i class="icon-magnifier"></i></li>
+        </ul>
+        <ul class="navbar-content">
+          <li><a href="index.html">Home</a></li>
+          
+          <li class="drop-down"><a href="index.html#tratamiento">Tratamiento</a>
+            <ul>
+              <li><a href="causes-list.html">Fases</a></li>
+              <li><a href="causes-grid.html">Alternativas</a></li>
+              <li><a href="single-cause.html">Tratamiento</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">Quienes Somos</a></li>
+          <li><a href="#">Programa Terapeutico</a></li>
+          <li> <a href="#">Galeria</a></li>
+          <li> <a href="#">Preguntas Frecuentes</a></li>
+
+          <li><a href="contact-us.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <section id="about-us" class="about-us section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Quienes Somos</h2>
+          <div class="underlines"><span class="right"></span>
+            <div class="icon"><i class="fa fa-star"></i></div><span class="left"></span>
+          </div>
+          <p class="description-text hidden-xs">Tenemos como filosofía primordial acompañar a la persona en recuperación a lograr el armado de su Proyecto de Vida, brindándole las herramientas   necesarias para su realización. </p>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="content left wow fadeInLeft"><img src="img/fotoquienes-somos.jpg" alt=""></div>
+          </div>
+          <div class="col-md-7 right wow fadeInRight">
+            <div class="sub-section-title">
+              <h3>Sobre Nosotros</h3>
+              <div class="underlines"><span class="left"></span></div>
+            </div>
+            <p>La formación de esta Institución, tiene como fundamento la intención de ATREVERSE a brindar un servicio que toma del pasado lo más relevante, adquiere del presente la efectividad y se lanza hacia un futuro con la suficiente amplitud de criterio y profesionalismo como para adecuarlo a los cambios y adelantarse a ellos. </p>
+            <p>   Nuestro equipo multidisciplinario está integrado por profesionales en    psiquiatría, psicología, clínica médica, operadores socio terapéuticos, acompañantes terapéuticos, trabajadores sociales, entre otros. Trabajamos en conjunto, ideando las estrategias y metodología de abordaje para la recuperación y futura reinserción social y laboral del sujeto con problemas de adicción. <br>
+              Ofrecemos  un contexto organizado específicamente desde lo ambiental, lo relacional, lo temporal, lo social, preparado para adaptarse a diferentes situaciones.
+            </p>
+            <p>Potenciamos la revalorización de principios, normas y valores. <br>
+             Incentivamos la independencia de criterios de los individuos en tratamiento como paso previo para poder decidir y armar su futuro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+     <section id="events" class="section events">
+      <div class="container">
+        <div class="section-title">
+          <h2>Compromiso Social.</h2>
+          <div class="underlines"><span class="right"></span>
+            <div class="icon"><i class="fa fa-star"></i></div><span class="left"></span>
+          </div>
+          <p class="description-text">• ACTIVIDADES  realizadas con la comunidad <br><br>
+            Cooperamos con Las Damas de Rosa del Municipio de Vicente López. <br><br>
+            Cooperamos con el Municipio de Vicente López en la lucha contra el consumo de sustancias (Fundación ATREVERSE ha sido declarada entidad de Bien Público Municipal de Vicente López número 540, Resolución número 2378/1998) <br><br>
+
+            Realizamos charlas de prevención en empresas. Capacitamos al personal jerárquico de dichas empresas para identificar y enfrentar la problemática de adicciones dentro del ámbito laboral.
+            </p>
+        </div>
+      </div>
+    </section>
+    
+    <div class="copy-rights">
+      <div class="container">
+        <p>All Right Resreved 2015 , Resala Template</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Causes</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="//localhost:9100/livereload.js"></script>
+  </body>
+</html>

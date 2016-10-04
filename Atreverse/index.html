@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fundación Atreverse</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Modernizer-->
+    <script src="js/modernizr.js"></script>
+    <!-- Botstrap styling-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- simple line icons-->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <!-- magnific popup-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- slick styles-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!--animate css-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- primary style-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="load-wrapp">
+      <div class="load-1">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="top-bar">
+      <div class="container">
+        <div class="left-content hidden-xs">
+          <ul>
+            <li><span class="icon"><i class="icon-envelope"></i></span>atreverseinstitucional@gmail.com</li>
+            <li><span class="icon"><i class="icon-earphones-alt"></i></span>(011)  4791 9264</li>
+          </ul>
+        </div>
+        <div class="right-content">
+          <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+          <button data-toggle="modal" data-target="#volunteermodal" class="button btn-primary btn-x-small">TRABAJA CON NOSOTROS</button>
+        </div>
+      </div>
+    </div>
+    <div id="volunteermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade custommodal">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h3 id="myModalLabel" class="modal-title">BECOME A VOLUNTEER</h3>
+          </div>
+          <div class="modal-body clearfix">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Name"><span class="icon"><i class="icon-user"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Project"><span class="icon"><i class="icon-pencil"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Phone Number"><span class="icon"><i class="icon-earphones"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="E-mail"><span class="icon"><i class="icon-envelope"></i></span>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea placeholder="aditional information"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="submit button primary">BECOME A VOLUNTEER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="donatemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" class="modal fade custommodal">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true" class="close-icon"><i class="icon-close"></i></span></button>
+            <h3 id="myModalLabel2" class="modal-title">BECOME A DONATER</h3>
+          </div>
+          <div class="modal-body clearfix">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Enter Donation Amount"><span class="icon"><i class="icon-info"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Name"><span class="icon"><i class="icon-user"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Phone Number"><span class="icon"><i class="icon-earphones"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="E-mail"><span class="icon"><i class="icon-envelope"></i></span>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea placeholder="aditional information"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="submit button primary">DONATE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="primary-navbar">
+      <div class="container">
+        <div class="menu-toggle"></div>
+        <div id="logo"><a href="index-1.html"><img src="img/logo.jpg" alt=""></a></div>
+        <ul class="search">
+          <li class="search-toggler"><i class="icon-magnifier"></i></li>
+        </ul>
+        <ul class="navbar-content">
+          <li><a href="index.html">Home</a></li>
+          
+          <li class="drop-down"><a href="#tratamiento">Tratamiento</a>
+            <ul>
+              <li><a href="causes-list.html">Fases</a></li>
+              <li><a href="causes-grid.html">Alternativas</a></li>
+              <li><a href="single-cause.html">Tratamiento</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">Quienes Somos</a></li>
+          <li><a href="#">Programa Terapeutico</a></li>
+          <li> <a href="#">Galeria</a></li>
+          <li> <a href="#">Preguntas Frecuentes</a></li>
+
+          <li><a href="contact-us.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header id="header" class="version5 parallax-bg">
+      <div class="container">
+        <div class="content">
+          <h1 class="wow fadeInUp">FUNDACIÓN ATREVERSE</h1>
+          <p data-wow-delay="0.3s" class="wow fadeInUp">Nos dedicamos desde el año 1992  a rehabilitar, reeducar y reinsertar  social y laboralmente a personas con problemas de adicciones.</p>
+          <ul class="buttons">
+            <li>
+              <button data-toggle="modal" href="about-us.html" class="button btn-primary btn-lg wow fadeInLeft">Sobre Nosotros</button>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section id="tratamiento" class="become-section">
+      <div class="col-md-4 nopadding violet-bg">
+        <div class="become-a-thing">
+          <h3 class="title">FASES DE TRATAMIENTO</h3>
+          <p> 1- ADMISION: <br>  I- Evaluación <br>
+                           II- Plan de tratamiento <br>
+              2 - TRATAMIENTO  EN C.T. <br>
+              3 - REINSERCION SOCIAL <br>   
+              4- ALTA TERAPÉUTICA  <br> 
+              <br>
+          </p>
+          <button class="button btn-border-light btn-lg">LEER MAS</button>
+        </div>
+      </div>
+      <div class="col-md-4 nopadding teal-bg">
+        <div class="become-a-thing">
+          <h3 class="title">ALTERNATIVAS DE TRATAMIENTO</h3>
+          <p> 1 - AMBULATORIO <br>
+              2 - HOSPITAL DÍA :<br> I- MEDIA JORNADA. (4HS) <br>
+                                II- JORNADA COMPLETA.( 8HS) <br>                        
+              3 - HOSPITAL DE NOCHE<br>
+              4 - INTERNACIÓN <br>
+              <br>
+         </p>
+          <button class="button btn-border-light btn-lg">LEER MAS</button>
+        </div>
+      </div>
+      <div class="col-md-4 nopadding red-bg">
+        <div class="become-a-thing">
+          <h3 class="title">TRATAMIENTO</h3>
+          <p>1- PSICOTERAPEUTICO: <br>
+            I- PSICOTERAPIA <br>
+            II- PSICOTERAPIA con el SISTEMA DE APOYO<br>
+            III- TALLERES TERAPEUTICOS<br>
+            IV- ACTIVIDADES RECREATIVAS <br>
+            2-  FARMACOLOGICO <br>
+            3- CONDUCTUAL         <br>              
+          </p>
+          <button class="button btn-border-light btn-lg">LEER MAS</button>
+        </div>
+      </div>
+    </section>
+    <section id="causes" class="section causes grey-bg">
+      <div class="section-title">
+        <h2>Fundación ATREVERSE  </h2>
+        <div class="underlines"><span class="right"></span>
+          <div class="icon"><i class="fa fa-star"></i></div><span class="left"></span>
+        </div>
+        <p class="description-text hidden-xs">Establecimiento Asistencial de deshabituación, desintoxicación, rehabilitación y reinserción de pacientes con problemas de adicciones. <br> Asistimos a Hombres mayores de 21 años en riesgo por problemas de adicciones</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 wow fadeInUp">
+            <div class="single-cause one">
+              <div class="col-md-7 nopadding">
+                <div class="img"><a href="single-cause.html"><img src="img/foto-actividades.jpg" alt=""></a></div>
+              </div>
+              <div class="col-md-5">
+                <div class="content">
+                  <h3><a href="#"> Actividades</a></h3>
+                
+                  <div class="clearfix"></div>
+                  <p>ACTIVIDADES:<br>
+                      I – GRUPOS TERAPÉUTICOS <br>
+                      II – TERAPIA INDIVIDUAL <br>
+                      III – GRUPO DE CONVIVENCIA<br>
+                      IV – SEMINARIOS<br>
+                      V – ENTREVISTAS FAMILIARES<br>
+                      VI – GRUPOS DE PADRES / FAMILIA<br>
+                      VII – ENTREVISTA PSIQUIÁTRICA<br>
+                      VIII – TALLERES TERAPÉUTICOS:<br> 1- YOGA <br>
+                                                     2- DEPORTES<br> 
+                                                     3- TALLER DE ESCRITURA<br>
+                                                      4- CINE DEBATE<br>
+                                                      5- TALLER INFORMATIVO<br>
+                    </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--include components/_our-gallery.jade-->
+    <section id="events" class="section events">
+      <div class="container">
+        <div class="section-title">
+          <h2>Programas con empresas.</h2>
+          <div class="underlines"><span class="right"></span>
+            <div class="icon"><i class="fa fa-star"></i></div><span class="left"></span>
+          </div>
+          <p class="description-text">Trabajamos capacitando al personal jerárquico de empresas para que puedan identificar y enfrentar la problemática  de adicciones dentro del ámbito laboral, abordando  las diferentes etapas en las que se le puede hacer frente, es decir: prevención, capacitación, detección de la problemática, asistencia individual y familiar.</p>
+          <p class="description-text">Nuestra premisa es brindar  a los trabajadores la posibilidad de recibir asistencia primaria acerca de su problemática, un posterior tratamiento -en diferentes modalidades según el caso específico-  y una posterior reinserción laboral y social, para así comenzar a gozar de la seguridad de un empleo y de las oportunidades de superación y ascenso profesional. </p>
+          <p class="description-text">Se presentará a cada paciente la posibilidad de formar parte de un tratamiento en una Fundación de Puertas Abiertas que incluye diversos dispositivos y modalidades terapéuticas -internación, hospital de día, tratamiento ambulatorio-, para dar respuestas  a la necesidad  y subjetividad de cada caso.   Además se promoverá al acompañamiento e intervención en el plano intrafamiliar, según se requiera.</p>
+          <p class="description-text">Se trabajará desde una posición garantista, interinstitucional, entendiendo que aquel lugar que funcionó en algún momento como sensor de ésta problemática, acompañará al empleado en su tratamiento, realizando un seguimiento de su desempeño terapéutico y promoviendo a generar lazos de autoconfianza y estima para una esperable reinserción laboral.</p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="text-center centerd">
+      <div class="container"><img src="img/logo.jpg" alt="" class="logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco magna aliqua laboris nisi ut aliquip co </p>
+      </div>
+      <ul class="social">
+        <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"> <i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"> <i class="fa fa-tumblr"></i></a></li>
+        <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="//localhost:9100/livereload.js"></script>
+  </body>
+</html>

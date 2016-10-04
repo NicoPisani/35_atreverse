@@ -1,0 +1,84 @@
+/*--------------------------------------------------
+
+- [18] - Fund Raising tabs
+
+---------------------------------------------------*/
+.custom-tabs {
+  background: $grey-bg;
+  margin-bottom: 30px;
+  ul {
+    
+    
+    li {
+      width: 230px;
+      border-top: 3px solid $grey-bg;
+      float: left;
+      text-align: center;
+      padding: 35px 0;
+      border-right: 1px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1;
+      color: $meta-text;
+      h3 {
+        color: $meta-text;
+        margin: 0;
+      }
+      .icon {
+        font-size: 23px;
+        margin-bottom: 20px;
+      }
+      a {
+        color: inherit;
+      }
+      &.active {
+        border-top:3px solid $primary-color;
+        color: $primary-color;
+        border-bottom: 0;
+        background: #fff;
+        .title {
+           color: $primary-color;
+        }
+      }
+    }
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+}
+/// responsive
+@media screen and (max-width:992px) {
+  .custom-tabs {
+  ul {
+    li {
+      width: 175px;
+    }
+  }
+}
+}
+
+@media screen and (max-width:768px) {
+  .custom-tabs {
+  ul {
+    li {
+      width: 100px;
+      .title {
+        font-size: 14px;
+      }
+    }
+  }
+}
+}
+@media screen and (max-width:480px) {
+  .custom-tabs {
+  ul {
+    li {
+      width: 100%;
+      padding: 15px 0;
+      .title {
+        font-size: 14px;
+      }
+    }
+  }
+}
+}

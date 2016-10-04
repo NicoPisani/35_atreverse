@@ -1,0 +1,84 @@
+.comments-wrapper {
+  margin-top: 40px;
+  .comment-list {margin-bottom: 40px;}
+  .write-comment {margin-bottom: 40px;}
+  .comment {
+    padding: 30px 0;
+    position: relative;
+    padding-left: 100px;
+    border-bottom: 1px solid $border-color;
+    .img {
+      width: 80px;
+      position: absolute;
+      left: 0;
+      height: 80px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    .content {
+      p {
+        margin-bottom: 5px;
+        color: $secondary-text;
+      }
+      .date {
+        font-size: 10px;
+      }
+      .reply {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        font-weight: 700;
+      }
+    }
+  }
+    .form-outer {
+    margin: auto;
+    display: inline-block;
+    &.message {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .form-group {
+    position: relative;
+    input {
+      width: 100%;
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      margin-top: -7px;
+      color: #a9a8a7;
+      right: 15px;
+      
+    }
+  }
+  textarea {
+    width: 100%;
+    border: 1px solid $border-color;
+    height: 150px;
+    border-radius: 3px;
+    resize: none;
+    padding-top: 15px;
+    
+  }
+  .submit {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+  }
+}
+
+/// repsonsive
+@media screen and (max-width:480px) {
+  .comments-wrapper {
+    .comment {
+      padding-left: 0;
+      text-align: center;
+      .img {
+        position: static;
+        margin: auto;
+      }
+    }
+  }
+}

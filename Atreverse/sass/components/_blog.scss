@@ -1,0 +1,130 @@
+/*--------------------------------------------------
+
+- [8] -  Blog
+
+---------------------------------------------------*/
+.our-blog {
+  .blog-post {
+    background: #fff;
+    border: 1px solid $border-color;
+    .img {
+      width: 100%;
+      height: 213px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      padding: 20px;
+      background: #fff;
+      .title {
+        margin-top: 0;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        a {
+          color: inherit;
+        }
+      }
+      .meta {
+        ul {
+          overflow: hidden;
+          margin-bottom: 15px;
+          li {
+            float: left;
+            color: $meta-text;
+            margin-right: 20px;
+            i {
+              margin-right: 10px;
+            }
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      p {
+        margin-bottom: 0;
+        color: $secondary-text;
+      }
+    }
+    &:hover {
+      .title {
+        color: $primary-color;
+      }
+    }
+  }
+  nav.pagination{
+    text-align: center;
+   
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+    
+  }
+  ul.paginaiton {
+    text-align: center;
+    display: block;
+  }
+}
+.blog-page{
+  .img-header {
+   position: relative;
+   margin-bottom: 40px;
+   width: 100%;
+   max-height: 400px;
+   overflow: hidden;
+    img {
+      max-height: 400px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      
+    }
+  }
+  }
+.post-container {
+  width: 700px;
+  margin: auto;
+  .post-title {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    
+  }
+  .date {color: $meta-text}
+  p {
+      color: $secondary-text;
+      margin-bottom: 30px;
+    }
+  .tags {
+    margin-top: 20px;
+    li {
+      display: inline-block;
+      margin-right: 3px;
+      margin-bottom: 3px;
+    }
+  }
+  @media screen and (max-width:992px) {
+    width: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+   
+  }
+}
+/// responsive
+@media screen and (max-width:992px) {
+  .our-blog .blog-post{
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width:480px) {
+  .our-blog .blog-post  {
+    .img {
+      height: auto;
+    }
+    .content .meta ul li {margin-right: 10px;}
+  }
+}

@@ -1,0 +1,10 @@
+-if(!partnersbg) partnersbg="grey-bg"
+section.section.partners(class="#{partnersbg}")
+  .container
+    .row
+      -for(x=0;x<6;x++)
+          .col-md-2.col-sm-4.col-xs-6.partouter
+            .single-partner
+              .img
+                img(src="img/partner-0#{x}.png", alt="")
+    

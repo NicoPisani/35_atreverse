@@ -1,0 +1,56 @@
+/*--------------------------------------------------
+
+- [11] -  Dark section
+
+---------------------------------------------------*/
+.dark-section {
+  height: 500px;
+  overflow: hidden;
+  .sub-section-title {
+    &:after{
+      content: normal;
+    }
+  }
+  .left {
+    background: url(http://placehold.it/700x465) no-repeat;
+    background-size: cover;
+    height: 500px;
+    &.adopt {
+      background: url(http://placehold.it/700x465) no-repeat;
+      background-size: cover;
+    }
+  }
+  .right {
+    height: 500px;
+    padding: 100px 50px;
+    background: #18171a;
+    .sub-section-title {
+      color: $primary-color;
+    }
+    p {
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/// responsive
+@media screen and (max-width:1024px) {
+  .dark-section {
+    .right {
+      padding: 50px;
+    }
+  }
+}
+@media screen and (max-width:992px) {
+  .dark-section {
+    height: auto;
+    .left {
+      height: 300px;
+    }
+    .right {
+      height: auto;
+      padding: 30px 15px;
+    }
+  }
+}

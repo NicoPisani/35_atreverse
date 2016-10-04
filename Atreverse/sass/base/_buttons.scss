@@ -1,0 +1,90 @@
+/*--------------------------------------------------
+
+- [2] -  Buttons
+
+---------------------------------------------------*/
+
+button {
+  border-radius: 3px;
+  font-weight: bold;
+  display: inline-block;
+  border: 0;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 15px;
+  color: #fff;
+  background: $primary-color;
+  &:focus {
+    border:0;
+     outline: 0;
+  }
+}
+
+.button {
+  border-radius: 3px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: normal;
+  border: 0;
+  font-size: 14px;
+  font-weight: 700;
+  @include transition(all .3s ease);
+  background: $primary-color;
+  &.btn-primary {
+   background: $primary-color;
+   color: #fff;
+    &:hover {
+      background: lighten($primary-color,10%);
+    }
+    &:focus {
+      border:0;
+      outline: 0;
+    }
+  }
+  &.btn-border-dark {
+    background: none;
+    color: #000;
+    border: 1px solid #000;
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+  &.btn-border-light {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    &:hover {
+      background: #fff;
+      color: $primary-text;
+    }
+  }
+  &.btn-xlg {
+    padding: 0 45px; 
+    height: 50px;
+  }
+  
+  &.btn-lg {
+    padding: 0px 35px;
+    height: 50px;
+  }
+  
+  &.btn-small {
+    padding: 10px 20px; 
+  }
+  &.btn-x-small {
+    padding: 0 20px;
+    height: 30px;
+    border-radius: 3px;
+    font-weight: normal;
+    font-size: 12px;
+  }
+}
+.btn-success {
+  background: $primary-color;
+}
+
+.btn-danger {
+  background: $red;
+}

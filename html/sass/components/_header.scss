@@ -1,0 +1,159 @@
+/*--------------------------------------------------
+
+- [5] - Header
+
+---------------------------------------------------*/
+
+
+header {
+  .content {
+    margin-top: 150px;
+    max-width: 650px;
+    position: relative;
+    z-index: 3;
+    &.right {
+      float: right;
+    }
+  }
+  h1 {
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    color: #141414;
+    margin-bottom: 30px;
+    &.white {
+      color: #fff;
+    }
+  }
+  p {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 40px;
+   
+    color: #333;
+    &.white {
+      color: #f9fafc;
+    }
+  }
+  .buttons {
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      &:last-of-type {margin-right: 0;}
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+header {
+  height: 550px;
+  width: 100%;
+  overflow: hidden;
+ 
+  &.version1 {
+    background: url(http://placehold.it/1920x1280) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    p {
+      max-width: 500px;
+      color: #141414;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  &.version2 {
+    height: 600px;
+    background: url(http://placehold.it/1920x700) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .content {
+      text-align: center; 
+      max-width: 100%;
+      margin-left:  auto;
+      margin-right: auto;
+    }
+    h1 {font-size: 40px; max-width: 800px; margin-left: auto; margin-right: auto;}
+    p {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }
+  &.version3 {
+    background: url(http://placehold.it/1920x700) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    h1 {
+      font-size: 36px;
+      color: #fff;
+    }
+     p {color: #fff; font-size: 18px; font-weight: 300;}
+  }
+   &.version4 {
+    background: url(http://placehold.it/1920x1000) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .content {
+      text-align: center; 
+      max-width: 100%;
+      margin-left:  auto;
+      margin-right: auto;
+    }
+    h1 {font-size: 45px;}
+     p {
+       font-size: 22px;
+       max-width: 680px;
+       margin-left: auto;
+       margin-right: auto;
+     }
+  }
+   &.version5 {
+    background: url(img/header-bg5.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    p {
+      max-width: 500px;
+      color: #141414;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}
+
+////////////// Responsive 
+@media screen and (max-width:1024px) {
+   header.version3 {height: 600px;}
+}
+@media screen and (max-width:992px) {
+  header {
+    height: auto;
+    padding-bottom: 35px;
+    .content {
+      margin-top: 50px;
+      h1 {
+        font-size: 36px !important;
+      }
+      p {
+        font-size: 16px !important;
+      }
+      .buttons {
+        li {
+          margin-bottom: 20px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  header.version2 {
+    height: auto;
+  }
+ header.version3 {height: auto;}
+  header.version4 {
+    padding-top: 50px;
+  }
+}

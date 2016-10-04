@@ -1,0 +1,117 @@
+-var causestitle = ['Building Homes for Homeless People','Resucing African kids from Starvation','helping Syrian Refugees  for free Education',' a reliable path for retirees to donate', 'Building Homes for Homeless People','Resucing African kids from Starvation','helping Syrian Refugees  for free Education'] 
+-var causesfullimgs = ['cause-full','cause-full_2','cause-full_3']
+section.section.causes.grey-bg#causes
+  -var sectiontitle = 'Our Causes'
+  include ../globals/_section-title.jade
+  .container
+    .row
+      case causesversion
+        when "horizontal"
+          -for(x=1; x<5;x++)
+            .col-md-6.col-sm-12(class="wow fadeInUp" data-wow-delay="0.#{x}s")
+              .single-cause.horizontal
+                .img
+                  a(href="single-cause.html"): img(src="http://placehold.it/678x452", alt="")
+                .content
+                  h3: a(href="single-cause.html") #{causestitle[x]}
+                  span.progressbar(data-progress="#{x*2}0%")
+                    span.progress-nm
+                  .clearfix
+                  ul
+                    li
+                      span.title Goal : 
+                      span.number #{x}#{x*2}0.000$ 
+                    li
+                      span.title Left : 
+                      span.number #{x*2}.000$ 
+                  .clearfix
+                  p Lorem ipsum dolor sit amet,  adipisic elit, sed eiusmod tempo  .
+        when "vertical"
+          -for(x=1; x<7;x++)
+            .col-md-4.col-sm-6(class="wow fadeInUp" data-wow-delay="0.#{x}")
+                .single-cause.vertical
+                  .img
+                    a(href="single-cause.html"): img(src="http://placehold.it/678x452", alt="")
+                  .content
+                    h3: a(href="single-cause.html")  #{causestitle[x]}
+                    span.progressbar(data-progress="#{x*2}0%")
+                      span.progress-nm
+                    .clearfix
+                    ul
+                      li
+                        span.title Goal : 
+                        span.number #{x}#{x*2}0.000$ 
+                      li
+                        span.title Left : 
+                        span.number #{x*2}.000$ 
+                    .clearfix
+                    p Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempor incididunt utsblad labore et dolore magna aliqua. esse cillum 
+                    
+        when "verticalslick"
+          .causes-carousl
+            -for(x=1; x<7;x++)
+              .col-md-4.col-sm-6(class="wow fadeInUp" data-wow-delay="0.#{x}")
+                  .single-cause.vertical
+                    .img
+                      a(href="single-cause.html"): img(src="http://placehold.it/678x452", alt="")
+                    .content
+                      h3: a(href="single-cause.html")  #{causestitle[x]}
+                      span.progressbar(data-progress="#{x*2}0%")
+                        span.progress-nm
+                      .clearfix
+                      ul
+                        li
+                          span.title Goal : 
+                          span.number #{x}#{x*2}0.000$ 
+                        li
+                          span.title Left : 
+                          span.number #{x*2}.000$ 
+                      .clearfix
+                      p Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempor incididunt utsblad labore et dolore magna aliqua. esse cillum 
+        
+        when "one"
+            .col-md-12.col-sm-12(class="wow fadeInUp")
+                .single-cause.one
+                  .col-md-7.nopadding
+                    .img
+                      a(href="single-cause.html"): img(src="http://placehold.it/678x452", alt="")
+                  .col-md-5
+                    .content
+                      h3: a(href="#")  #{causestitle[0]}
+                      span.progressbar(data-progress="80%")
+                        span.progress-nm
+                      .clearfix
+                      ul
+                        li
+                          span.title Goal : 
+                          span.number 120.000 $ 
+                        li
+                          span.title Left : 
+                          span.number 2.000 $ 
+                      .clearfix
+                      p Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempor incididunt utsblad labore et dolore magna aliqua.
+                      p esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cun
+                      button.button.primary.btn-xlg(class="wow bounceIn" data-wow-delay="0.3s") DONATE NOW
+        when "one-causes-page"
+          -for(x=0;x<3;x++)
+            .col-md-12.col-sm-12
+                .single-cause.one
+                  .col-md-7.nopadding
+                    .img
+                      a(href="single-cause.html"): img(src="http://placehold.it/678x452", alt="")
+                  .col-md-5
+                    .content
+                      h3: a(href="single-cause.html")  #{causestitle[0]}
+                      span.progressbar(data-progress="80%")
+                        span.progress-nm
+                      .clearfix
+                      ul
+                        li
+                          span.title Goal : 
+                          span.number 120.000 $ 
+                        li
+                          span.title Left : 
+                          span.number 2.000 $ 
+                      .clearfix
+                      p Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempor incididunt utsblad labore et dolore magna aliqua. esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id  Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                      button.button.primary.btn-xlg DONATE NOW

@@ -1,0 +1,48 @@
+-var rewards = ['Basic Reward','Advanced Rewaard','Digital Reward','Ultimate Reward']
+-var rewarddesc = ['You will git  T-shirt with our logo coffe mug and our signatured poster.','You will git  T-shirt with our logo coffe mug and our signatured poster . chance to meet our Founder and CEO Mr John Doe','You’ll have the chance to do a skype conversation with our Team , and chance to ask them whatever you want about our project','You reward will include all rewards in the other 3 plans in addition to one chance to visit our working space and stay with us one day']
+section.section.rewards.overlay-dark3
+  -var sectiontitle = 'OUR REWARDS'
+  include ../globals/_section-title.jade
+  .container
+   .row
+      ul
+        -for(x=0;x<4;x++)
+          li.single-reward(class="wow fadeInUp" data-wow-delay="0.#{x}s")
+            .col-md-2.col-sm-2.col-xs-12
+              h3.reward #{rewards[x]}
+            .col-md-6.col-sm-6.col-xs-12
+              p #{rewarddesc[x]}
+            .col-md-2.col-sm-2.col-xs-12
+              h3.pledge Pledge with 
+                span.num #{(x+1*1)*5}$
+            .col-md-2.col-sm-2.col-xs-12
+              button.button.primary(data-toggle="modal", data-target="#donatemodal") PLEDGE NOW
+#donatemodal.modal.fade.custommodal(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span.close-icon(aria-hidden='true'): i.icon-close
+            h3#myModalLabel.modal-title BECOME A DONATER
+          .modal-body.clearfix
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="Enter Donation Amount")
+                span.icon: i.icon-info
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="Name")
+                span.icon: i.icon-user
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="Phone Number")
+                span.icon: i.icon-earphones
+            .col-md-6
+              .form-group
+                input(type="text" placeholder="E-mail")
+                span.icon: i.icon-envelope
+            .col-md-12
+              .form-group
+                textarea(placeholder="aditional information")
+          .modal-footer
+            button.submit.button.primary(type='button') DONATE

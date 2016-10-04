@@ -1,0 +1,31 @@
+
+.comments-wrapper
+  -var subsectiontitle = 'Comments (32)'
+  include ../globals/_sub-section-title.jade
+  .comment-list
+    -for(x=1;x<4;x++)
+      .comment
+        .img:  img(src="img/testmonial-0#{x}.jpg", alt="")
+        .content
+          h4 LOUIS BLOOM
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          span.date.meta-text
+            i.icon-watch
+            | 2 Weeks ago
+          a.reply(href="#") REPLY
+  .write-comment
+    -var subsectiontitle = 'WRITE A COMMENT'
+    include ../globals/_sub-section-title.jade
+    .row.text-center
+      .col-md-6.form-outer.col-sm-9.col-xs-12
+        .form-group
+          input(type="text" placeholder="Name")
+          span.icon: i.icon-user
+      .col-md-6.form-outer.col-sm-9.col-xs-12
+        .form-group
+          input(type="text" placeholder="E-mail")
+          span.icon: i.icon-envelope
+      .col-md-12.col-sm-11.col-xs-12.form-outer.message
+        textarea(placeholder="Message")
+        button.button.btn-primary.submit SUBMIT
+    
