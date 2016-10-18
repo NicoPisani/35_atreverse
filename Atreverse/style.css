@@ -1864,8 +1864,9 @@ header.version5 p {
 .our-gallery .images-container .img {
   position: relative;
   float: left;
-  width: 20%;
+  width: 19%;
   overflow: hidden;
+  margin: 0.5%;
 }
 .our-gallery .images-container .img img {
   width: 100%;
@@ -3057,4 +3058,15 @@ CAMBIOS SOFI
 
   .preg-frec {
     color: #4dcec4;
+    text-transform: none;
+
+  }
+
+  .img-terapeutico {
+    margin-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 30px;
+    width: 50%;
+    -webkit-transform:rotate(90deg);
+    margin-left: 70px;
   }
