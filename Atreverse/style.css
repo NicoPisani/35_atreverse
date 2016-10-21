@@ -548,9 +548,11 @@ button:focus {
   height: 50px;
 }
 .button.btn-lg {
-  padding: 0px 35px;
+  padding: 15px 35px;
   height: 50px;
 }
+
+
 .button.btn-small {
   padding: 10px 20px;
 }
@@ -597,11 +599,11 @@ button:focus {
 }
 
 .red-bg {
-  background: #b8ebe7;
+  background: #a1e5dd;
 }
 
 .teal-bg {
-  background: #94e2dc;
+  background: #85ddd4;
 }
 
 .parallax-bg {
