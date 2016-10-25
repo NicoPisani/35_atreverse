@@ -1,38 +1,26 @@
-<!-- Contact form PHP script -->
-
 <?php
-    $name = $_POST['name'];
-    $number = $_POST['number'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    if (isset ($_POST['nombre'], $_POST['asunto'], $_POST['telefono'], $_POST['email'], $_POST['mensaje']))  {
 
-    $to = "hi@wcanvas.com"; // Replace xxxx@xxxx.com with your email address (mandatory!) 
-    $subject = "Consulta"; // Choose a custom subject (not mandatory)
+        $nombre = $_POST['nombre'];
+        $asunto = $_POST['asunto'];
+        $telefono = $_POST['telefono'];
+        $email = $_POST['email'];
+        $mensaje = $_POST['mensaje'];
 
-    $body = "Recibiste un mensaje de " . $name ."\n - su numero es ".$number. " (" . $email . "):\n\n" . $message;
+        $email_to = 'tomas@wcanvas.com';
 
-    $from = "De: Fundacion Atreverse"; //
-    $headers = "De:" . $from . "\r\n";
-    $headers .= "Responderle a: " . $email . "\r\n";
-    $headers .= "X-Mailer: PHP/" . phpversion();    
-                
-    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        if ($name != '' && $email != '' && $message != '') {
-                
-            if (mail ($to, $subject, $body, $headers)) { 
-                echo '<p style="color:#66A325;">Gracias! Tu mensaje fue recibido!</p>';
-            } else { 
-                echo '<p style="color:#F84B3C;">Ups! Algo salio mal, por favor proba de nuevo.</p>'; 
-            } 
-
-        } else {
-            echo '<p style="color:#F84B3C;">Hay campos incompletos!</p>';
+        if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+            $email_subject = $asunto;
+            $body = "Recibiste un mensaje de ".$nombre."\nSu numero es ".$telefono." (".$email."):\n\n Ha dejado el siguiente mensaje:\n ".$mensaje;
+            $headers = "From: " .$email."\r\n";
+            mail($email_to, $email_subject, $body, $headers);
+            echo 0;
+            return;
+        }
+        else {
+            echo 1;
         }
     } else {
-        echo '<p style="color:#F84B3C;">Direccion de mail invalida.</p>';
-    }  
-
-
- 
-
+        echo 1;
+    }
 ?>

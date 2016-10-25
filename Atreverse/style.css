@@ -572,6 +572,23 @@ button:focus {
   background: #ff6b6b;
 }
 
+.btn-envio-formulario{
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+.alert {
+  margin-left: 27%;
+}
+
+.contacto-alert{
+  margin-top: 10px;
+  margin-left: 2.3%;
+}
+
+
   /*--------------------------------------------------
 
 - [5] - helper styles
@@ -2483,6 +2500,7 @@ footer .logo {
 }
 
 .map {
+  margin-top: 40px;
   padding-bottom: 30%;
 }
 @media screen and (max-width: 768px) {

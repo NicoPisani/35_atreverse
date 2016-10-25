@@ -183,3 +183,67 @@ $(window).on("load",function(){
     $('.load-wrapp').fadeOut();
 
 });
+
+// FUNCION PARA REALIZAR EL ENVIO DE FORMULARIO
+$(document).ready(function () {
+
+    var baseUrl = location.origin;
+
+    $("#btn-enviar").click(function(e) {
+
+        $("#loader").css("display","inline-block");
+        var formData = $("#contact-form").serialize();
+        $(".alert-danger").hide();
+
+        $.ajax({
+            method: "POST",
+            data: formData,
+            url: "mail.php",
+            success: function(data) {
+                if (data == 0) {
+                    console.log("Mail Enviado");
+                    $("#loader").hide();
+                    $(".alert-success").css("display","inline-block");
+                    $("#btn-enviar").hide();
+                    $("#contacto-btn-enviar").hide();
+                } else if (data == 1) {
+                    console.log("Error");
+                    $("#loader").hide();
+                    $(".alert-danger").css("display","inline-block");
+                }
+            }
+        });
+    });
+})
+
+// FUNCION PARA REALIZAR EL ENVIO DE FORMULARIO DE LA SECCION CONTACTO
+$(document).ready(function () {
+
+    var baseUrl = location.origin;
+
+    $("#contacto-btn-enviar").click(function(e) {
+
+        $("#contacto-loader").css("display","inline-block");
+        var formData = $("#contacto-contact-form").serialize();
+        $(".alert-danger").hide();
+
+        $.ajax({
+            method: "POST",
+            data: formData,
+            url: "contacto-mail.php",
+            success: function(data) {
+                if (data == 0) {
+                    console.log("Mail Enviado");
+                    $("#contacto-loader").hide();
+                    $(".alert-success").css("display","inline-block");
+                    $("#contacto-btn-enviar").hide();
+                    $("#btn-enviar").hide();
+                } else if (data == 1) {
+                    console.log("Error");
+                    $("#contacto-loader").hide();
+                    $(".alert-danger").css("display","inline-block");
+                }
+            }
+        });
+    });
+})

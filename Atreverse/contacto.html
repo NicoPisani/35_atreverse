@@ -66,7 +66,7 @@
     </div>
      <div id="volunteermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade custommodal">
       <div role="document" class="modal-dialog">
-        <div class="modal-content">
+        <form id="contact-form" class="modal-content">
           <div class="modal-header">
             <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
             <h3 id="myModalLabel" class="modal-title">CONTACTANOS</h3>
@@ -74,69 +74,41 @@
           <div class="modal-body clearfix">
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" placeholder="Nombre"><span class="icon"><i class="icon-user"></i></span>
+                <input type="text" placeholder="Nombre" name="nombre"><span class="icon"><i class="icon-user"></i></span>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" placeholder="Asunto"><span class="icon"><i class="icon-pencil"></i></span>
+                <input type="text" placeholder="Asunto" name="asunto"><span class="icon"><i class="icon-pencil"></i></span>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" placeholder="Numero"><span class="icon"><i class="icon-earphones"></i></span>
+                <input type="text" placeholder="Numero" name="telefono"><span class="icon"><i class="icon-earphones"></i></span>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" placeholder="E-mail"><span class="icon"><i class="icon-envelope"></i></span>
+                <input type="text" placeholder="E-mail" name="email"><span class="icon"><i class="icon-envelope"></i></span>
               </div>
             </div>
             <div class="col-md-12">
               <div class="form-group">
-                <textarea placeholder="Mensaje"></textarea>
+                <textarea placeholder="Mensaje" name="mensaje"></textarea>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="submit button primary">Enviar</button>
+            <p id="btn-enviar" type="button" class="btn-envio-formulario submit button primary">Enviar</p>
           </div>
-        </div>
-      </div>
-    </div>
-    <div id="donatemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" class="modal fade custommodal">
-      <div role="document" class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true" class="close-icon"><i class="icon-close"></i></span></button>
-            <h3 id="myModalLabel2" class="modal-title">CONTACTANOS</h3>
+          <img id="loader" src="img/ajax-loader.gif" alt="" hidden>
+          <div class="alert alert-success" hidden>
+            <strong>Formulario enviado correctamente!</strong>
           </div>
-          <div class="modal-body clearfix">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" placeholder=""><span class="icon"><i class="icon-user"></i></span>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" placeholder="Phone Number"><span class="icon"><i class="icon-earphones"></i></span>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" placeholder="E-mail"><span class="icon"><i class="icon-envelope"></i></span>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <textarea placeholder="aditional information"></textarea>
-              </div>
-            </div>
+          <div class="alert alert-danger" hidden>
+            <strong>Error al enviar el formulario.</strong> Verificar los campos completados.
           </div>
-          <div class="modal-footer">
-            <button type="button" class="submit button primary">DONATE</button>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
     <nav class="primary-navbar">
@@ -183,15 +155,15 @@
       </div>
       <div class="container">
         <div class="row text-center">
-          <form method="post" action="mail.php">
+          <form id="contacto-contact-form">
             <div class="col-md-3 form-outer col-sm-9 col-xs-12">
               <div class="form-group">
-                <input type="text" placeholder="Nombre" name="name" required><span class="icon"><i class="icon-user"></i></span>
+                <input type="text" placeholder="Nombre" name="nombre" required><span class="icon"><i class="icon-user"></i></span>
               </div>
             </div>
             <div class="col-md-3 form-outer col-sm-9 col-xs-12">
               <div class="form-group">
-                <input type="text" placeholder="Telefono" name="number" required><span class="icon"><i class="icon-phone"></i></span>
+                <input type="text" placeholder="Telefono" name="telefono" required><span class="icon"><i class="icon-phone"></i></span>
               </div>
             </div>
             <div class="col-md-3 form-outer col-sm-9 col-xs-12">
@@ -200,8 +172,15 @@
               </div>
             </div>
             <div class="col-md-9 col-sm-9 col-xs-12 form-outer message">
-              <textarea placeholder="Mensaje" name="message" required></textarea>
-              <input type="submit" id="submit" class="button button btn-primary submit">
+              <textarea placeholder="Mensaje" name="mensaje" required></textarea>
+              <p id="contacto-btn-enviar" type="button" class="btn-envio-formulario submit button primary">Enviar</p>
+            </div>
+            <img id="contacto-loader" src="img/ajax-loader.gif" alt="" hidden>
+            <div class="contacto-alert alert alert-success alert-contacto" hidden>
+              <strong>Formulario enviado correctamente!</strong>
+            </div>
+            <div class="contacto-alert alert alert-danger alert-contacto" hidden>
+              <strong>Error al enviar el formulario.</strong> Verificar los campos completados.
             </div>
           </form>
         </div>
